@@ -1,0 +1,70 @@
+.success-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/Images/bg-service.jpg") no-repeat center center/cover;
+}
+
+.success-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  height: 80vh;
+  width: 400px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.huzzl-logo{
+    margin-left: -17rem;
+}
+
+.checkmark {
+    margin-bottom: 20px;
+   height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin: 20px 170px;
+    background-color: rgb(36, 206, 36);
+}
+
+.checkmark span{
+    color: #fff;
+    font-size: 50px;
+    margin-left: -5px;
+}
+
+.success-card h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.success-card p {
+  font-size: 17px;
+  color: #666;
+  margin-bottom: 25px;
+  line-height: 1.7;
+
+}
+
+
+.explore-btn {
+  background:#1c19f0;
+  width: 100%; 
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background: #1d4ed8;
+}
+
+
+

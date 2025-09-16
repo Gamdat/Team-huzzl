@@ -1,0 +1,86 @@
+.page-service{
+    background: url("/Images/bg-service.jpg");
+    background-size: cover;
+    padding: 0;
+    border-radius: 10px;
+    min-height: 140vh;
+    margin-top: -5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.card{
+    background-color: #fff;
+    padding: 10px 15px;
+    min-height: 80vh;
+    max-width: 400px;
+    margin: 80px auto;
+    position: relative;
+    top: 5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+label{
+   color: #1c19f0;
+   margin: 10px 0 5px;
+   font-weight: bold;
+}
+
+input, select, textarea{
+    padding: 10px;
+      border: 1px solid #03398c;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      outline: none;
+}
+
+select option:hover{
+    background-color: #03398c;
+    color: #fff;
+}
+textarea{
+    min-height: 80px;
+    resize: vertical;
+}
+
+.pricing-row{
+    display: flex;
+    align-items: center;
+    border:  1px solid #bab9ff;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.pricing-row select{
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.pricing-row input{
+   border: none;
+   padding: 10px;
+   font-size: 14px;
+   margin-bottom: 2px;
+}
+
+.currency{
+    margin-left: 7rem;
+}
+
+button{
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #3336db;
+}
