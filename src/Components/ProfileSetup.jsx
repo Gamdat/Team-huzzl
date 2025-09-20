@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./ProfileSetup.css"
 import ProgressBar from "./ProgressBar";
 
-const ProfileSetup = ({ onFinish }) => {
+const ProfileSetup = ({ onContinue}) => {
   const [profileData, setProfileData] = useState({
     bio: "",
     description: "",
@@ -15,7 +15,7 @@ const ProfileSetup = ({ onFinish }) => {
       const file = e.target.files[0];
       setProfileData({
         ...profileData,
-        profileImage: URL.createObjectURL(file), // preview image
+        profileImage: URL.createObjectURL(file), 
       });
     }
   };
@@ -32,7 +32,7 @@ const ProfileSetup = ({ onFinish }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onFinish(profileData);
+    onContinue(profileData);
   };
 
   return (

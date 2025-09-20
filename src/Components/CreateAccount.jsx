@@ -12,8 +12,6 @@ const CreateAccount = ({ onContinue }) => {
     password: "",
   });
 
-  const [error, setError] = useState("");
-
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -22,15 +20,13 @@ const CreateAccount = ({ onContinue }) => {
     e.preventDefault();
     onContinue(formData);
   
+    if (!formData.phone || !formData.name || !formData.password) {
+      alert("All fields are required.");
+    }
 
-  if (formData.password.length < 12) {
-    setError(" Password must be at least 12 characters long.");
-    return;
-  } else if (formData.password.length > 20) {
-    setError(" Password must not exceed 20 characters.");
-    return;
-  } else {
-    setError("");
+  if (formData.password.length < 12 || formData.password.length > 20) {
+  alert("Password must be between 12-20 characters.");
+  return;
   }
 
   onContinue(formData);
@@ -49,7 +45,13 @@ const CreateAccount = ({ onContinue }) => {
             <ProgressBar step={1} />
 
             {/*form section */}
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => {
+        e.preventDefault();
+        if (e.currentTarget.checkValidity()) {
+          onContinue(formData);
+        }
+       }}
+      >
         
         {/*phone number*/}
         <label>Phone Number</label>
@@ -116,11 +118,10 @@ required
           maxLength={20}
           required
         />
-{error && <p style={{ color: "red"}}>{error}</p>}
 
         <p className="character">At least 12 characters, no more than 20 characters.</p>
        
-        <button type="submit">Continue</button>
+        <button type="submit" onClick={(e) => e.stopPropagation()}>Continue</button>
       </form>
       
       {/* login */}
