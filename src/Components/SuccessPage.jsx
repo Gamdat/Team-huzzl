@@ -6,6 +6,7 @@ const SuccessPage = () => {
     <div className="success-container">
       <div className="success-card">
         
+        {/* logo*/}
         <div className="huzzl-logo">
           <img src="/Images/Logo.png" alt="Huzzl Logo" className="logo" />
         </div>

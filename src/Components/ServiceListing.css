@@ -1,5 +1,5 @@
 .page-service{
-    background: url("/images/bg-service.jpg");
+    background: url("public/images/bg-service.jpg");
     background-size: cover;
     padding: 0;
     border-radius: 10px;
