@@ -1,27 +1,25 @@
 .page-create{
-    background-image: url(/Images/bg-create.jpg);
+    background: url("/images/bg-create.jpg");
     background-size: cover;
     border-radius: 10px;
     min-height: 140vh;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
-    color: #1c19f0;
+    color: #2454f3;
     margin-top: -5rem;
 }
 
 .card{
-    background-color:#fff;
+    background-color: #fff;
     padding: 10px 15px;
-    position: relative;
-    top: 5rem;
     min-height: 80vh;
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
 }
 
 .logo{
-    margin-left: 18rem;
+    margin-left: 17rem;
 }
 
 h2{
@@ -49,15 +47,17 @@ input, select{
 }
 
 select{
-    color: #1c19f0;
+    color: #2454f3;
     cursor: pointer;
     font-size: 14px;
+    background-color: #fff;
+    height: 39px;
+     border: 1px solid #bab9ff;
 }
 
 input::placeholder{
-     color: #1c19f0;
+     color: #2454f3;
 }
-
 
 .side{
     display: flex;
@@ -95,12 +95,11 @@ input::placeholder{
 }
 
 .character{
-    font-size: 12px;
-    margin-top: -.5rem;
+    font-size: 13px;
 }
 
 button{
-    background-color: #1c19f0;
+    background-color: #2454f3;
     color: #fff;
     padding: 12px;
     border: none;
@@ -114,7 +113,6 @@ button{
 .sign-in{
     text-align: center;
     font-size: 14px;
-    margin-top: -10px;
 }
 
 .sign-in a{
@@ -128,15 +126,87 @@ button{
 .privacy{
     margin-top: 2rem;
     text-align: center;
-    font-size: 12.5px;
+}
+
+.privacy p{
+    font-size: .9rem;
 }
 
 .privacy a{
     text-decoration: none;
     cursor: pointer;
     color: #4d4af3;
+    font-size: .8rem;
 }
 
+.sign{
+    margin-bottom: -10px;
+}
 .privacy a:hover{
     text-decoration: underline;
+}
+
+@media (max-width:500px){
+    
+.card{
+    padding: 7px 10px;
+    max-width: 80%;
+   }
+
+.logo{
+    margin-left: 12rem;
+}
+
+   h2{
+    font-size: 20px;
+   }
+
+label{
+    margin: 10px 0 4px;
+    font-size: 14px;
+}
+
+input, select{
+    padding: 7px;
+    font-size: 12px;
+}
+
+select{
+    font-size: 13px;
+}
+
+.side{
+    gap: 10px;
+}
+
+.character{
+    font-size: 11px;
+}
+
+button{
+    font-size: 13px;
+}
+
+.sign-in{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.privacy p{
+    font-size: 12px;
+}
+
+.privacy a{
+    font-size: 1px;
+}
+}
+
+@media (max-width:400px){
+.privacy p{
+    font-size: 12px;
+}
+
+.privacy a{
+    font-size: 11px;
+}
 }

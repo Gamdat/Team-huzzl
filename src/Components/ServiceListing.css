@@ -1,5 +1,5 @@
 .page-service{
-    background: url("/Images/bg-service.jpg");
+    background: url("/images/bg-service.jpg");
     background-size: cover;
     padding: 0;
     border-radius: 10px;
@@ -26,7 +26,7 @@ h2{
 }
 
 label{
-   color: #1c19f0;
+   color: #2454f3;
    margin: 10px 0 5px;
    font-weight: bold;
 }
@@ -37,12 +37,9 @@ input, select, textarea{
       border-radius: 6px;
       margin-bottom: 15px;
       outline: none;
+      color: #03398c;
 }
 
-select option:hover{
-    background-color: #03398c;
-    color: #fff;
-}
 textarea{
     min-height: 80px;
     resize: vertical;
@@ -72,15 +69,49 @@ textarea{
 }
 
 .currency{
-    margin-left: 7rem;
+    margin-left: 2rem;
 }
 
 button{
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     cursor: pointer;
     margin-top: 10px;
 }
 
 button:hover{
     background: #3336db;
+}
+
+@media (max-width:500px){
+.card{
+    padding: 8px 10px;
+    min-height: 70vh;
+}
+
+label{
+   margin: 8px 0 4px;
+}
+
+input, select, textarea{
+    padding: 9px;
+      margin-bottom: 13px;
+      background-color: #fff;
+}
+
+.pricing-row{
+    margin-bottom: 9px;
+}
+
+.pricing-row select{
+  padding: 9px;
+}
+
+.pricing-row input{
+   padding: 9px;
+}
+
+
+.currency{
+    margin-left: 5px;
+}
 }

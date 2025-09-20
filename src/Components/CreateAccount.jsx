@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom";
 import "./CreateAccount.css"
 import ProgressBar from "./ProgressBar";
 
@@ -38,19 +39,27 @@ const CreateAccount = ({ onContinue }) => {
   return (
 <div className="page-create">
     <div className="card">
+      
+      {/* logo*/}
        <div className="logo">
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
 
         <h2>Create an Account</h2>
             <ProgressBar step={1} />
+
+            {/*form section */}
       <form onSubmit={handleSubmit}>
+        
+        {/*phone number*/}
         <label>Phone Number</label>
         <div className="phone-row">
           <select name="country"
 value={formData.location}
 onChange={handleChange}
+required
 >
+  {/* country*/}
   <option value="NGN">Nigeria</option>
   <option value="GH">Ghana</option>
   <option value="KE">Kenya</option>
@@ -62,9 +71,11 @@ onChange={handleChange}
           placeholder="+234 000-000-0000"
           value={formData.phone}
           onChange={handleChange}
+          required
         />
           </div>
 
+{/* name*/}
 <div className="side">
 <div className="full-name">
         <label>Full Name</label>
@@ -74,18 +85,26 @@ onChange={handleChange}
           placeholder="Olivia Smith"
           value={formData.name}
           onChange={handleChange}
+          required
         />
 </div>
 
+{/* location*/}
 <div className="location">
         <label>Location</label>
-        <select name="location" value={formData.location} onChange={handleChange}>
+        <select name="location" 
+        value={formData.location} 
+        onChange={handleChange}
+        required>
+          
           <option value="Nigeria">Nigeria</option>
           <option value="Ghana">Ghana</option>
           <option value="Kenya">Kenya</option>
         </select>
 </div>
 </div>
+
+{/* password*/}
         <label>Password</label>
         <input
           type="password"
@@ -93,17 +112,23 @@ onChange={handleChange}
           placeholder="************"
           value={formData.password}
           onChange={handleChange}
-required
+          minLength={12} 
+          maxLength={20}
+          required
         />
 {error && <p style={{ color: "red"}}>{error}</p>}
+
         <p className="character">At least 12 characters, no more than 20 characters.</p>
+       
         <button type="submit">Continue</button>
       </form>
       
+      {/* login */}
 <div className="sign-in">
-  <p>Already have an account? <a href="#">Sign in</a></p>
+  <p>Already have an account? <Link to="/login">Sign In</Link></p>
 </div>
 
+{/* privacy policy*/}
 <div className="privacy">
   <p>By signing i confirm that i have carefully read and agree to the HUZZL</p>
   <p><a href="#">Privacy Policy and Terms of Services.</a></p>

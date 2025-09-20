@@ -1,8 +1,8 @@
 .page-profile{
-    background: url("/Images/bg-profile.jpg");
+    background: url("/images/bg-profile.jpg");
     background-size: cover;
     padding: 0;
-    color: #03398c;
+    color: #2454f3;
     border-radius: 10px;
     min-height: 140vh;
     margin-top: -5rem;
@@ -124,5 +124,52 @@ button{
 }
 
 button:hover{
-    background: #3d40db;
+    background: #2454f3;
+}
+
+@media (max-width:500px){
+.card{
+    padding: 8px 10px;
+    min-height: 70vh;
+    max-width: 300px;
+}
+
+.profile-image-upload{
+    margin-bottom: .5rem;
+}
+
+.image-preview{
+    width: 90px;
+    height: 90px;
+}
+
+label{
+    margin: 8px 0 4px;
+}
+
+input, textarea{
+    padding: 8px;
+    font-size: 14px;
+}
+
+.document-upload {
+  margin-bottom: 1rem;
+}
+
+.upload-box {
+  padding: 1rem;
+}
+
+.upload-icon {
+  font-size: 2rem;
+}
+
+.upload-text {
+  font-size: 0.9rem;
+}
+
+button{
+    padding: 10px;
+    font-size: 15px;
+}
 }

@@ -11,7 +11,7 @@ const App = () => {
 
   const handleContinue = (data) => {
     setUserData({ ...userData, ...data });
-    setStep((prev) => (prev < 4 ? prev + 1 : prev));
+    setStep((prev) => prev + 1);
   };
 
   const handleFinish = (data) => {
@@ -25,11 +25,8 @@ const App = () => {
   return (
 
     <div className="app-container">
-
       {step === 1 && <CreateAccount onContinue={handleContinue} />}
-
       {step === 2 && <ProfileSetup onFinish={handleContinue} />}
-
       {step === 3 && <ServiceListing onSubmit={handleFinish} />}
    {step === 4 && <SuccessPage/>}
     </div>

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/Images/bg-service.jpg") no-repeat center center/cover;
+  background: url("/images/bg-service.jpg") no-repeat center center/cover;
 }
 
 .success-card {
@@ -16,8 +16,10 @@
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.huzzl-logo{
-    margin-left: -17rem;
+.huzzl-logo {
+  width: 100px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .checkmark {
@@ -51,7 +53,7 @@
 
 
 .explore-btn {
-  background:#1c19f0;
+  background:#2454f3;
   width: 100%; 
   color: #fff;
   padding: 12px 20px;
@@ -68,3 +70,30 @@
 
 
 
+@media (max-width:500px) {
+.success-card {
+  padding: 30px 20px;
+  height: 80vh;
+}
+
+.huzzl-logo {
+  margin-bottom: 20px;
+}
+
+.success-card h2 {
+  font-size: 27px;
+}
+
+.success-card p {
+  font-size: 15px;
+  line-height: 1.9;
+
+}
+
+
+.explore-btn {
+  padding: 12px 17px;
+  font-size: 15px;
+}
+
+}

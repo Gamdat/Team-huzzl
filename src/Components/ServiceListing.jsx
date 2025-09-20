@@ -27,21 +27,25 @@ const ServiceListing = ({ onSubmit }) => {
   return (
 <div className="page-service">
     <div className="card">
+      {/* logo*/}
 <div className="logo">
         <img src="/Images/Logo.png" alt="logo"/>
       </div>
       <h2>Service Listing</h2>
+
  <ProgressBar step={3} />
 
+{/* form*/}
       <form onSubmit={handleSubmit}>
         <label>Category</label>
         <select
           name="category"
           value={serviceData.category}
           onChange={handleChange}
-
+          required
         >
 
+          {/* category option*/}
 <option value="Plumbing">Plumbing</option>
           <option value="Electrical">Electrical</option>
           <option value="Cleaning">Cleaning</option>
@@ -66,16 +70,18 @@ const ServiceListing = ({ onSubmit }) => {
                <option value="Spa Therapist">Spa Therapist</option>
 </select>
 
+{/* title*/}
         <label>Title</label>
-
         <input
           type="text"
           name="title"
           placeholder="Enter Service Title"
           value={serviceData.title}
           onChange={handleChange}
+          required
         />
 
+        {/* price*/}
  <label>Pricing</label>
         <div className="pricing-row">
           <div className="price">
@@ -85,14 +91,17 @@ const ServiceListing = ({ onSubmit }) => {
               placeholder="5000"
               value={serviceData.price}
               onChange={handleChange}
+              required
             />
-
           </div>
+
+          {/* currency*/}
           <div className="currency">
             <select
               name="currency"
               value={serviceData.currency}
               onChange={handleChange}
+              required
             >
 
               <option value="NGN">NGN</option>
@@ -100,9 +109,9 @@ const ServiceListing = ({ onSubmit }) => {
               <option value="GBP">GBP</option>
             </select>
           </div>
-
         </div>
 
+        {/* availability*/}
         <label>Availability</label>
         <input
           type="text"
@@ -110,16 +119,17 @@ const ServiceListing = ({ onSubmit }) => {
           placeholder="Mondays, Tuesdays..."
           value={serviceData.availability}
           onChange={handleChange}
-
+          required
         />
 
+        {/* description*/}
         <label>Description</label>
         <textarea
           name="description"
           placeholder="Enter a description..."
           value={serviceData.description}
           onChange={handleChange}
-
+          required
         />
 
         <button type="submit">Continue</button>

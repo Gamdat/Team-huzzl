@@ -11,21 +11,13 @@ const ProfileSetup = ({ onFinish }) => {
   });
 
    const handleImageChange = (e) => {
-
     if (e.target.files && e.target.files[0]) {
-
       const file = e.target.files[0];
-
       setProfileData({
-
         ...profileData,
-
         profileImage: URL.createObjectURL(file), // preview image
-
       });
-
     }
-
   };
   const handleChange = (e) => {
     setProfileData({ ...profileData, [e.target.name]: e.target.value });
@@ -53,9 +45,12 @@ const ProfileSetup = ({ onFinish }) => {
 
          <ProgressBar step={2} />
 
+{/* form*/}
       <form onSubmit={handleSubmit}>
          <div className="profile-image-upload">
       <label htmlFor="profileImage">
+
+        {/* profile-image sector*/}
         <div className="image-preview">
           {profileData.profileImage ? (
             <img src={profileData.profileImage} alt="Profile" />
@@ -63,23 +58,19 @@ const ProfileSetup = ({ onFinish }) => {
             <span className="upload-placeholder">+</span>
           )}
         </div>
-
       </label>
 
       <input
         type="file"
-
         id="profileImage"
-
         accept="image/*"
-
         onChange={handleImageChange}
-
         style={{ display: "none" }}
-
+        required
       />
     </div>
-
+    
+    {/* bio*/}
         <label>Bio</label>
         <input
           type="text"
@@ -87,20 +78,20 @@ const ProfileSetup = ({ onFinish }) => {
           placeholder="Tell us about yourself"
           value={profileData.bio}
           onChange={handleChange}
-
+          required
         />
 
-
+        {/*description */}
         <label>Description</label>
         <textarea
           name="description"
           placeholder="Enter a description"
           value={profileData.description}
           onChange={handleChange}
-
+          required
         />
 
-        <label>Business Vrification Document</label>
+        <label>Business Verification Document</label>
        <div className="document-upload">
           <label htmlFor="documentUpload" className="upload-box">
             <span className="upload-icon">📄</span>
@@ -111,14 +102,15 @@ const ProfileSetup = ({ onFinish }) => {
             </span>
           </label>
 
+{/* document upload*/}
           <input
             type="file"
             id="documentUpload"
             accept=".pdf,.doc,.docx,.jpg,.png"
             onChange={handleFileChange}
             style={{ display: "none" }}
+            required
           />
-
         </div>
 
         <button type="submit">Continue</button>
