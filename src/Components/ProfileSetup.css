@@ -1,5 +1,5 @@
 .page-profile{
-    background: url("public/images/bg-profile.jpg");
+    background: url("/public/images/bg-profile.jpg");
     background-size: cover;
     padding: 0;
     color: #2454f3;
