@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("/public/images/bg-service.jpg") no-repeat center center/cover;
+  background: url("/public/Images/bg-service.jpg") no-repeat center center/cover;
 }
 
 .success-card {
