@@ -121,6 +121,7 @@ button{
 
 .sign-in a:hover{
     text-decoration: underline;
+    color: #2454f3;
 }
 
 .privacy{
