@@ -50,6 +50,10 @@
     text-decoration: none;
 }
 
+.back-link img{
+    width: 15px;
+    vertical-align: middle;
+}
 
 .back-link:hover{
     background-color: #03398c;

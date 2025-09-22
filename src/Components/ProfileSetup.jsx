@@ -94,7 +94,7 @@ const ProfileSetup = ({ onContinue}) => {
         <label>Business Verification Document</label>
        <div className="document-upload">
           <label htmlFor="documentUpload" className="upload-box">
-            <span className="upload-icon">📄</span>
+            <span className="upload-icon"> <img src="/Images/arrow up.svg"/> </span>
             <span className="upload-text">
               {profileData.document
                 ? profileData.document.name

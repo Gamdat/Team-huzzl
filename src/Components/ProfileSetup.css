@@ -112,6 +112,9 @@ textarea{
   color: #007bff;
 }
 
+.upload-icon img{
+    height: 4rem;
+}
 .upload-text {
   font-size: 0.95rem;
   color: #555;

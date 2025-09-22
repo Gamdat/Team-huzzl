@@ -10,7 +10,7 @@ const SuccessPage = () => {
         <div className="huzzl-logo">
           <img src="/Images/Logo.png" alt="Huzzl Logo" className="logo" />
         </div>
-        <div className="checkmark"><span>✔</span></div>
+        <div className="checkmark"><span> <img src="/Images/check.svg"/> </span></div>
         <h2>Your account has been setup!</h2>
         <p>
           We've been busy behind the scenes, making sure your huzzl experience
