@@ -28,7 +28,8 @@ const Login = () => {
          <img src="/Images/Logo.png" alt="logo"
              className="logo-huzzl" />
         <img src="/Images/worker.png" alt="Worker" className="signin-image" />
-        <a href="/" className="back-link">Back to Website →</a>
+        <a href="/" className="back-link">Back to Website 
+        <span> <img src="/Images/arrow-right-solid-full"/> </span></a>
       </div>
 
 
