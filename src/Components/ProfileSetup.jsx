@@ -37,7 +37,8 @@ const ProfileSetup = ({ onContinue}) => {
 
   return (
 <div className="page-profile">
-    <div className="card">
+   <h2 className="access-2">Get access to over 100M+ <br/> clients who needs your services</h2>
+      <div className="card-2">
  <div className="logo">
         <img src="/Images/Logo.png" alt="logo"/>
       </div>

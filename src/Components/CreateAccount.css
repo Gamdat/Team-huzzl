@@ -1,5 +1,7 @@
 .page-create{
-    background: url("/public/Images/bg-create.jpg");
+    background:linear-gradient(to bottom, 
+    rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
+     url("/public/Images/bg-create.jpg");
     background-size: cover;
     border-radius: 10px;
     min-height: 140vh;
@@ -9,11 +11,20 @@
     margin-top: -5rem;
 }
 
-.card{
+.access{
+    position: relative;
+    top: 42rem;
+    left: 33rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+.card-1{
     background-color: #fff;
-    padding: 10px 15px;
+  padding: 10px 15px;
+     margin-left: 60rem;
     min-height: 80vh;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.5);
 }
@@ -149,27 +160,30 @@ button{
 
 @media (max-width:500px){
     
-.card{
+.card-1{
     padding: 7px 10px;
-    max-width: 80%;
+    max-width: 85%;
+    margin-left:1rem;
+    min-height: 95vh;
+    margin-top: 2rem;
    }
 
 .logo{
-    margin-left: 12rem;
+    margin-left: 16rem;
 }
 
    h2{
-    font-size: 20px;
+    font-size: 2rem;
    }
 
 label{
     margin: 10px 0 4px;
-    font-size: 14px;
+    font-size: 19px;
 }
 
 input, select{
     padding: 7px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 select{
@@ -181,28 +195,66 @@ select{
 }
 
 .character{
-    font-size: 11px;
+    font-size: 12px;
 }
 
 button{
     font-size: 13px;
+    font-weight: bold;
 }
 
 .sign-in{
-    font-size: 12px;
+    font-size: 16px;
     margin-top: -10px;
 }
 
 .privacy p{
-    font-size: 12px;
+    font-size: 13px;
+    margin-top: -1.3rem;
+    margin-bottom: 2rem;
 }
 
 .privacy a{
-    font-size: 1px;
+    font-size: 12px;
 }
+
+
+.access{
+    position: relative;
+    top: 52rem;
+    left: 2rem;
+    font-size: 1.5rem;
+}
+
 }
 
 @media (max-width:400px){
+
+    .card-1{
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+
+
+.access{
+    position: relative;
+    top: 55rem;
+    left: 5rem;
+    font-size: 1rem;
+}
+
+
+.logo{
+    margin-left: 10rem;
+}
+
+.character{
+    font-size: 12px;
+}
+.sign-in{
+    font-size: 13px;
+}
+
 .privacy p{
     font-size: 12px;
 }

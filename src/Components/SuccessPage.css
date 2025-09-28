@@ -102,6 +102,13 @@
 .explore-btn {
   padding: 12px 17px;
   font-size: 15px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.explore-btn:hover{
+  background-color: #1d4ed8;
+  color: #041b5a;
 }
 
 }

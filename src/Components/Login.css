@@ -292,7 +292,84 @@
 
 }
 
+@media (max-width:500px){
+    .signin-container{
+    margin-left: 1rem;
+   gap: 1px;
+    padding: 1rem 2rem;
+    max-width: 500px;
+}
 
+.signin-right{
+    margin-right: -1rem;
+}
+
+.signin-left{
+    margin-right: 2.5rem;
+}
+
+.signin-image{
+   margin-left: -1.5rem;
+}
+
+
+.back-link{
+    position: absolute;
+    top: 11rem;
+      left: 3rem;
+    padding: 5px 5px;
+      font-weight: 700;
+}
+
+.signin-container h2{
+   font-size: 1.3rem;
+   margin-top: 4rem;
+   margin-left: -1rem;
+}
+
+.social-login{
+    display: flex;
+    gap: 5px;
+}
+
+.social-login button{
+   gap: 2px;
+    padding: 6px 1px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.google{
+    margin-left: -1rem;
+}
+
+.signin-container p{
+    font-size: 15px;
+}
+
+.signin-container input{
+    font-size: 13px;
+}
+
+
+.signup-text{
+   margin-top: 20px;
+    font-size: 16px;
+}
+
+.signup-text a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-text a:hover{
+    text-decoration: underline;
+     color: #03398c;
+}
+
+}
 
 @media (max-width:400px) {      
 .signin-container{

@@ -34,8 +34,8 @@ const CreateAccount = ({ onContinue }) => {
 
   return (
 <div className="page-create">
-    <div className="card">
-      
+  <h2 className="access">Get access to over 100M+ <br/> clients who needs your services</h2>
+   <div className="card-1">
       {/* logo*/}
        <div className="logo">
         <img src="/Images/Logo.png" alt="logo"/>
