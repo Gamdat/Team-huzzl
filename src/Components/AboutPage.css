@@ -543,7 +543,7 @@ left: 15rem;
 }
 
 .get-started{
-    padding: 2px 20px;
+    padding: 5px 20px;
     font-size: 12px;
 }
 
@@ -687,6 +687,19 @@ left: 18rem;
 hr{
     width: 130vw;
     margin-left: -4rem;
+}
+
+.sector-2{
+    margin-right: -4rem;
+}
+
+.sector-4{
+    margin-right: -4rem;
+}
+
+.sector-5{
+    margin-left: 4rem;
+     white-space: nowrap;
 }
 
 .footer-copy{
