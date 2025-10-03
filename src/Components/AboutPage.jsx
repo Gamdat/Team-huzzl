@@ -172,9 +172,8 @@ const AboutPage = () => {
 
      <div className="sector-5">
   <h4>Social Media Links</h4>
-            <p>H</p>
-            <p>C</p>
-            <p>h</p>
+            <p> <img src="/Images/twitter.svg" alt="twitter"/> <img src="/Images/instagram.svg" alt="instagram"/>
+           <img src="/Images/linkedin.svg" alt="linkedin"/></p>
 </div>
         </div>
 <hr/>

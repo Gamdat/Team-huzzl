@@ -40,14 +40,15 @@
 }
 
 .get-started{
-    padding: 10px 15px;
+    padding: 5px 15px;
     background-color: #03398c;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 200;
-    margin-left: 1.5rem;
+    margin-left: -2rem;
+    white-space: nowrap;
 }
 
 .get-started:hover{
@@ -270,6 +271,10 @@ hr{
 
 }
 
+.sector-5 img{
+    width: 30px;
+}
+
 .footer-bottom{
     margin-top: 1rem;
     font-size: 0.9rem;
@@ -286,7 +291,7 @@ hr{
 
 .about-section{
  padding: 7px;
-   height: 64vh;
+   height: 52vh;
 }
 
 .Logo{
@@ -294,12 +299,12 @@ hr{
 }
 
 .nav-links{
-    gap: 2.5rem;
-    margin-left: 2rem;
+    gap: 2.2rem;
+    margin-left: 1rem;
 }
 
 .get-started{
-    padding: 4px 39px;
+    padding: 5px 25px;
     font-size: 12px;
     margin-left: 1rem;
 }
@@ -311,14 +316,14 @@ hr{
 
 .about-right{
 position: relative;
-top: -20.2rem;
+top: -19.8rem;
 left:21rem;
 }
 
 .about-left{
-        margin-left: -2rem;
-        font-weight: 500;
-        line-height: 1.2;
+ margin-left: -2rem;
+   font-weight: 500;
+   line-height: 1.2;
 }
 
 .about-left p{
@@ -397,20 +402,20 @@ left:21rem;
 
 .about-section{
  padding: 5px;
-   height: 70vh;
+   height: 56vh;
 }
 
 .Logo{
-    margin-left: -5rem;
+    margin-left: -6rem;
 }
 
 .nav-links{
-    gap: 2rem;
+    gap: 1rem;
     margin-left: -1rem;
 }
 
 .get-started{
-    padding: 3px 30px;
+    padding: 3px 20px;
     font-size: 12px;
 }
 
@@ -525,12 +530,12 @@ left: 15rem;
 
 .about-section{
  padding: 5px;
-   height: 79vh;
+   height: 66vh;
    width: 120vw;
 }
 
 .Logo{
-    margin-left: -7rem;
+    margin-left: -6rem;
 }
 
 .nav-links{
@@ -552,18 +557,19 @@ h1{
 
 .about-right{
 position: relative;
-top: -19.3rem;
+top: -19rem;
 left: 18rem;
 }
 
 .about-left{
-    margin-left: -4rem;
+    margin-left: -3rem;
 }
 
 
 .about-left p{
      font-size: 18px;
 }
+
 .about-img{
     width: 60vw;
 }
